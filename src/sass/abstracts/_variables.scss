@@ -1,8 +1,11 @@
 $background-color: linear-gradient(
   to right bottom,
-  rgba(#78a8b8,1),
-  rgba(#78a8b8, 0.5)
+  rgba(#e0d8b8, 1),
+  rgba(#e0d8b8, 0.5)
 );
+$font-logo: "Dancing Script", cursive;
+$font-display: "Merriweather", serif;
 
-$color-primary:#186880;
-$color-grey-dark-1:#202828;
+$color-primary: #384848;
+$color-secondary: #707878;
+$color-grey-dark-1: #202828;

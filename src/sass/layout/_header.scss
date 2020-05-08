@@ -20,10 +20,162 @@
     box-shadow: 0 1rem 2.5rem 1rem rgba($color-grey-dark-1, 0.2);
   }
   &__navigation {
-    height: 5rem;
+    height: 3rem;
     margin-top: auto;
     border: none;
     border-top: 1px solid rgba($color-grey-dark-1, 0.1);
     box-shadow: 0 1rem 2.5rem 1rem rgba($color-grey-dark-1, 0.2);
+  }
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: $font-logo;
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 700;
+    transition: all 0.8s;
+    cursor: pointer;
+    &:hover {
+      color: black;
+    }
+  }
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    fill: inherit;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &-1 {
+      display: flex;
+      background-color: $color-secondary;
+      color: #fff;
+      fill: #fff;
+      margin-right: 1rem;
+      border-radius: 3px;
+      transform: scale(0.9);
+      transition: all 0.4s;
+      &:hover {
+        transform: scale(1) translateY(-0.5rem);
+      }
+    }
+    &-2 {
+      display: flex;
+      background-color: #101820;
+      color: #fff;
+      fill: #fff;
+      border-radius: 3px;
+      transform: scale(0.9);
+      transition: all 0.4s;
+      &:hover {
+        transform: scale(1) translateY(-0.5rem);
+      }
+    }
+  }
+  &__log {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.btn {
+  &-create {
+    background-color: inherit;
+    color: inherit;
+    &:hover {
+      background-color: rgba($color-secondary, 0.5);
+    }
+  }
+  &-login {
+    background-color: inherit;
+    color: inherit;
+    &:hover {
+      background-color: rgba(#101820, 0.5);
+    }
+  }
+}
+
+.header__navigation {
+  font-family: $font-display;
+  text-transform: uppercase;
+  &-inicio {
+    @include btn-navigation;
+  }
+  &-sucursales {
+    display: block;
+    text-align: center;
+    &-span {
+      @include btn-navigation;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+    }
+    &-sucursal {
+      opacity: 0;
+      z-index: -1;
+      margin: 0.5rem 0;
+      transform: translate(0, -75%);
+      transition: all 0.8s cubic-bezier(0.68, -0.7, 0.25, 1.84);
+    }
+    &:hover &-sucursal {
+      opacity: 1;
+      transform: translateY(1rem);
+      background-color: rgba($color-primary, 1);
+      color: #fff;
+      border-radius: 3px;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+    &-sucursal:hover {
+      transition: all 0.3s;
+      &:hover {
+        background-color: rgba($color-primary, 0.6);
+      }
+    }
+  }
+  &-promociones {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba($color-primary, 1);
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba($color-primary, 0.6);
+    }
+  }
+  &-tienda {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba($color-primary, 1);
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba($color-primary, 0.6);
+    }
+  }
+  &-contacto {
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba($color-primary, 1);
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba($color-primary, 0.6);
+    }
   }
 }

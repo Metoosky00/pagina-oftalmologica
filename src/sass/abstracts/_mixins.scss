@@ -1,0 +1,13 @@
+@mixin btn-navigation {
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba($color-primary, 1);
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgba($color-primary, 0.6);
+  }
+}
