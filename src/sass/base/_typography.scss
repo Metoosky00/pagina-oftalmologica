@@ -1,0 +1,17 @@
+.heading-container {
+  width: 100%;
+}
+
+.heading {
+  &-2 {
+    font-size: 3rem;
+    text-align: center;
+    color: $color-primary;
+    font-style: italic;
+  }
+  &-3 {
+    font-size: 1.5rem;
+    font-family: $font-display;
+    color: $color-primary;
+  }
+}

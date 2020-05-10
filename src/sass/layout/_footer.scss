@@ -1,0 +1,43 @@
+.footer {
+  height: 7.1rem;
+  margin: 0 auto;
+  //   background-color: $color-primary;
+  background-image: linear-gradient(
+    105deg,
+    rgba($color-primary, 1) 0%,
+    rgba($color-primary, 0.7) 50%
+  );
+  border-top: 0.5px solid rgba($color-secondary, 0.6);
+  display: flex;
+}
+
+.privacity {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: #fff;
+  }
+}
+.social {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-redes-icon {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 2rem;
+    cursor: pointer;
+    transform: translateY(0.5rem);
+    fill: rgba(#000, 0.7);
+    transition: all 0.8s cubic-bezier(0.68, -0.7, 0.25, 1.84);
+    &:hover {
+      fill: #fff;
+      width: 4rem;
+      height: 4rem;
+      transform: translateY(-1rem);
+    }
+  }
+}
