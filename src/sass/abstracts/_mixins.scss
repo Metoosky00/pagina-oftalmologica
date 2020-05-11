@@ -7,8 +7,11 @@
   color: #fff;
   text-decoration: none;
   background-color: rgba($color-primary, 1);
-  transition: all 0.3s;
+  transition: all 0.5s;
   &:hover {
+    position: relative;
+    z-index: 200;
+    transform: scale(1.15);
     background-color: rgba(#fff, 0.6);
     color: $color-primary;
   }

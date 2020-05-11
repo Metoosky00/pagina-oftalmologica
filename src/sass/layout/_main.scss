@@ -5,92 +5,10 @@
     rgba($color-primary, 0.2) 50%,
     transparent 75%
   );
-  //   background-color: rgba($color-primary, 0.5);
   border: none;
   border-top: 0.5px solid rgba($color-secondary, 0.5);
   border-bottom: 0.5px solid rgba($color-secondary, 0.5);
   box-shadow: 0 0.1rem 1rem rgba($color-primary, 0.1);
   margin: 0 auto;
   clip-path: polygon(0 0, 75% 0, 100% 25%, 100% 100%, 0 100%);
-}
-.news {
-  &__promocion {
-    width: 100;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-  &__sucursales {
-    height: 12rem;
-    padding-top: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-  &__recomendaciones {
-    height: 10rem;
-    padding-top: 2rem;
-    margin-top: 4rem;
-  }
-}
-
-.promociones {
-  display: flex;
-  height: 70%;
-  align-items: center;
-  &__promocion {
-    flex: 0 0 50%;
-    display: flex;
-    align-items: center;
-    &:not(:last-child) {
-      margin-right: 1rem;
-    }
-  }
-  &-image {
-    height: 15rem;
-    border-radius: 5px;
-    box-shadow: 0.5rem 0.5rem 1rem rgba($color: #000000, $alpha: 0.7);
-    flex: 0 0 auto;
-    margin-right: 3rem;
-    opacity: 0.9;
-  }
-}
-
-.promociones-desciption {
-  &-beneficios {
-    width: 90%;
-    padding: 1rem;
-    list-style: none;
-    font-family: $font-display;
-    font-weight: 500;
-    border-radius: 3px;
-    box-shadow: 0 1rem 1rem rgba($color: #000000, $alpha: 0.7);
-  }
-}
-
-.sucursales {
-  list-style: none;
-  font-family: $font-display;
-  font-weight: 500;
-  font-size: 1.3rem;
-  text-align: justify;
-  padding-left: 2rem;
-  box-shadow: 0 1rem 1rem rgba($color-secondary, 0.5);
-  border-radius: 3px;
-  border-top: 1px solid rgba($color-primary, 0.5);
-}
-
-.recomendaciones {
-  box-shadow: 0 1rem 1rem rgba($color-secondary, 0.5);
-  border-radius: 3px;
-  border-top: 1px solid rgba($color-primary, 0.5);
-  padding: 1rem;
-  padding-left: 2rem;
-  & > * {
-    font-size: 1rem;
-    font-family: $font-display;
-    font-weight: 500;
-    text-align: justify;
-  }
 }
