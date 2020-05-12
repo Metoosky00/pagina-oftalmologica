@@ -61,7 +61,9 @@ export default () => {
             </div>
           </Col>
           <Col xs={2}>
-            <Link className="header__navigation-promociones">Promociones</Link>
+            <Link to="/Promociones" className="header__navigation-promociones">
+              Promociones
+            </Link>
           </Col>
           <Col xs={2}>
             <Link className="header__navigation-tienda">Tienda</Link>
