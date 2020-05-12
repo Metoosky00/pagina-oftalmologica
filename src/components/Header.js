@@ -42,13 +42,19 @@ export default () => {
                 </Link>
                 <ul>
                   <li className="header__navigation-sucursales-sucursal">
-                    <Link className="link-without-decoration">Sucursal1</Link>
+                    <Link to="/Sucursales" className="link-without-decoration">
+                      Sucursal1
+                    </Link>
                   </li>
                   <li className="header__navigation-sucursales-sucursal">
-                    <Link className="link-without-decoration">Sucursal2</Link>
+                    <Link to="/Sucursales" className="link-without-decoration">
+                      Sucursal2
+                    </Link>
                   </li>
                   <li className="header__navigation-sucursales-sucursal">
-                    <Link className="link-without-decoration">Sucursal3</Link>
+                    <Link to="/Sucursales" className="link-without-decoration">
+                      Sucursal3
+                    </Link>
                   </li>
                 </ul>
               </div>

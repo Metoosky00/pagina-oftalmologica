@@ -16,3 +16,29 @@
     color: $color-primary;
   }
 }
+
+@mixin img-sucursal {
+  margin-left: 3rem;
+  width: 100%;
+  img {
+    width: 20%;
+    height: 20rem;
+    border-radius: 10px;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(#000, 0.5);
+  }
+}
+
+%margin-top_sucursal {
+  p:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+%propiedades-sucursal {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  height: 25rem;
+  font-family: $font-display;
+  line-height: 1;
+}
