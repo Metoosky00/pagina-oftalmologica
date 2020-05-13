@@ -69,7 +69,9 @@ export default () => {
             <Link className="header__navigation-tienda">Tienda</Link>
           </Col>
           <Col xs={2}>
-            <Link className="header__navigation-contacto">Contacto</Link>
+            <Link to="/Contacto" className="header__navigation-contacto">
+              Contacto
+            </Link>
           </Col>
         </Row>
       </Grid>
