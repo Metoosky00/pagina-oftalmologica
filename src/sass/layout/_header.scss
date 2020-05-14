@@ -56,10 +56,12 @@
     fill: inherit;
   }
   &__group {
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     &-1 {
+      width: 100%;
       padding: 0.5rem;
       display: flex;
       background-color: $color-secondary;
@@ -73,6 +75,7 @@
       }
     }
     &-2 {
+      width: 100%;
       padding: 0.5rem;
       display: flex;
       background-color: #101820;

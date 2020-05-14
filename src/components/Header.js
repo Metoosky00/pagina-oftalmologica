@@ -17,13 +17,13 @@ export default () => {
                 <svg className="header__icon">
                   <use xlinkHref={`${sprite}#icon-add-user`}></use>
                 </svg>
-                <button className="btn btn-create">Crear cuenta</button>
+                <Link className="btn btn-create">Crear cuenta</Link>
               </div>
               <div className="header__group-2">
                 <svg className="header__icon">
                   <use xlinkHref={`${sprite}#icon-user`}></use>
                 </svg>
-                <button className="btn btn-login">Iniciar Sesión</button>
+                <Link to='/Login'className="btn btn-login">Iniciar Sesión</Link>
               </div>
             </div>
           </Col>
