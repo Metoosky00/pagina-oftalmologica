@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Sucursales from "./pages/Sucursales";
 import Promociones from "./pages/Promociones";
 import Contacto from "./pages/Contacto";
+import NewAcount from "./pages/NewAcount";
 import Login from "./pages/Login";
 import "./main.scss";
 
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/Sucursales" component={Sucursales} />
         <Route exact path="/Promociones" component={Promociones} />
         <Route exact path="/Contacto" component={Contacto} />
+        <Route exact path="/NewAcount" component={NewAcount} />
         <Route exact path="/Login" component={Login} />
         <Footer />
       </Grid>

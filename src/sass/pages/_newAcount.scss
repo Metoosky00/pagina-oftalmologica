@@ -1,0 +1,128 @@
+.createAcountContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 34.5rem;
+}
+
+.createAcount {
+  width: 50%;
+  height: 90%;
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(#000, 0.7),
+    rgba(#000, 0.2)
+  );
+  border-radius: 10px;
+  box-shadow: 0.4rem 0.4rem 0.3rem rgba($color-primary, 0.7);
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  &__group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    &:not(:last-child) {
+      margin-top: 1.5rem;
+    }
+  }
+  &__titulo {
+    font-size: 2rem;
+    font-family: $font-display;
+    color: #fff;
+    font-style: italic;
+    margin: 0 auto;
+  }
+  &__label {
+    font-size: 1.3rem;
+    font-family: $font-display;
+    color: #fff;
+  }
+  &__input {
+    padding: 0.3rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid rgba(#fff, 0.7);
+    color: #fff;
+    outline: none;
+    &:focus:invalid {
+      border-bottom: 3px solid rgba(#b71c1c, 0.7);
+    }
+    &:focus:valid {
+      border-bottom: 3px solid rgba(#4caf50, 0.7);
+    }
+  }
+  &__span {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgba(#b71c1c, 0.7);
+    top: -1rem;
+    right: 0;
+  }
+  &__btn {
+    &,
+    &:link,
+    &:visited {
+      text-transform: uppercase;
+      padding: 1.15rem;
+      margin: 1.5rem auto;
+      display: inline-block;
+      border-radius: 10px;
+      transition: all 0.2s;
+      position: relative;
+      font-size: 1.3rem;
+      font-family: $font-display;
+      background-image: linear-gradient(
+        to left bottom,
+        rgba(#000, 0.7),
+        rgba(#000, 0.5)
+      );
+      color: #fff;
+      box-shadow: 0.3rem 0.3rem 0.4rem rgba(#000, 0.7);
+      border: none;
+      cursor: pointer;
+    }
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0.3rem 0.3rem 0.4rem rgba(#000, 0.7);
+      &::after {
+        transform: scale(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0.3rem 0.3rem 0.4rem rgba(#000, 0.2);
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(#fff, 0.7);
+      z-index: -1;
+      transition: all 0.4s;
+    }
+    &-span {
+      transition: all 0.4s;
+    }
+    &:hover &-span {
+      display: inline-block;
+      transform: translateX(0.5rem);
+    }
+  }
+}
