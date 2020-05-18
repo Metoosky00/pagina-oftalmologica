@@ -1,0 +1,49 @@
+.tienda {
+  display: flex;
+  flex-wrap: wrap;
+  //   flex-direction: column;
+  width: 100%;
+}
+.tiendaCarrito {
+  flex: 0 0 100%;
+  height: 4rem;
+  position: relative;
+  &__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: 4rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  &__icon {
+    position: fixed;
+    top: 34%;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 3rem;
+    fill: rgba($color-primary, 1);
+    &:hover {
+      fill: rgba($color-primary, 0.7);
+    }
+  }
+  &__number {
+    position: fixed;
+    top: 37%;
+    right: 1.5%;
+    z-index: -1;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    background-color: rgba(red, 0.9);
+    color: #fff;
+  }
+}
+.productos {
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+}

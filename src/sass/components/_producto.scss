@@ -1,0 +1,52 @@
+.producto {
+  flex: 1 1 30%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.6);
+  &__group {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  &__image {
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(#000, 0.6);
+  }
+  &__label {
+    font-size: 1.5rem;
+    font-family: $font-display;
+  }
+  &__btn {
+    &,
+    &:active,
+    &:link {
+      margin-bottom: 1rem;
+      display: block;
+      width: 30%;
+      padding: 1rem;
+      border-radius: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      background-image: linear-gradient(
+        105deg,
+        rgba(#000, 0.5) 0%,
+        rgba($color-primary, 0.5) 100%,
+        transparent 100%
+      );
+      color: #fff;
+      box-shadow: 0.3rem 0.3rem 0.4rem rgba(#000, 0.6);
+    }
+    &:hover {
+      animation: saltar 1.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) infinite;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
